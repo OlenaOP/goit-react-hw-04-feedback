@@ -1,0 +1,8 @@
+.buttonWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  text-transform: capitalize;
+}
