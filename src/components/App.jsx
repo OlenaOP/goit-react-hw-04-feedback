@@ -7,20 +7,11 @@ import { Notification } from './Notification/Notification';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 
 export const App = () => {
-  // state = {
-  //   good: 0,
-  //   neutral: 0,
-  //   bad: 0,
-  // };
-
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
   const onLeaveFeedback = event => {
-    // this.setState(prevState => ({
-    //   [event.target.name]: prevState[event.target.name] + 1,
-    // }));
     const statusBtn = event.target.name;
     if (statusBtn === 'good') {
       setGood(prevState => prevState + 1);
@@ -67,11 +58,6 @@ export const App = () => {
           <Notification messages="There is no feedback" />
         )}
       </Section>
-      {/* <Statistics
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
-        /> */}
     </div>
   );
 };
